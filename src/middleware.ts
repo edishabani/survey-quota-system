@@ -7,13 +7,13 @@ export function middleware(request: NextRequest) {
 // Protect admin routes
 if (request.nextUrl.pathname.startsWith('/admin')) {
 // Add your authentication logic here
-const isAuthenticated = /* your auth check */;
+// const isAuthenticated = /* your auth check */;
 
 
 
-if (!isAuthenticated) {
-return NextResponse.redirect(new URL('/login', request.url))
-}
+// if (!isAuthenticated) {
+// return NextResponse.redirect(new URL('/login', request.url))
+// }
 }
 
 
